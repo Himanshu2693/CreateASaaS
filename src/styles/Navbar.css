@@ -1,10 +1,22 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} */
+ .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .logo {
@@ -13,7 +25,7 @@
   color: #333;
 }
 
-.nav-links {
+/* .nav-links {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -29,6 +41,42 @@
 .nav-links li:hover {
   background-color: orange;
   color: white;
+} */
+.nav-center {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-center li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.nav-center li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+.nav-right {
+  display: flex;
+  gap: 12px;
+}
+.signin-btn {
+  background: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signin-btn:hover {
+  background: #007bff;
+  color: white;
 }
 
 .cta-button {
@@ -38,11 +86,11 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cta-button:hover {
-  background: #0056b3;
+  /* background: #0056b3; */
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }
