@@ -11,7 +11,8 @@ const Hero = () => {
 
 
       
-      <p>Beautiful landing pages that convert. Fast. Modern. Reliable.</p>
+      <p>Beautiful landing pages that convert.</p>
+      <p>Fast. Modern. Reliable.</p>
       <button className="hero-button">Start Free Trial</button>
     </section>
   );
