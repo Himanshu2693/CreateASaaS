@@ -12,9 +12,9 @@ const Navbar = () => {
         ☰
       </div>
       <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-        <li>Features</li>
-        <li>Pricing</li>
-        <li>Contact</li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
       </ul>
       <button className="cta-button">Get Started</button>
     </nav>
